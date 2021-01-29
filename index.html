@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>うまか堂-梅もなか</title>
+    <meta name="description" content="福岡の新しいお土産うまか堂の梅もなか">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!--ress.cssの設定-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!--Google Fontsの設定-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <!--FontAwesomeの設定-->
+    <script src="https://kit.fontawesome.com/dbbf494f05.js" crossorigin="anonymous"></script>
+    <!--使用するCSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" type="img/png" href="img/fabcon.png">
+
+    <!--Javascriptへのリンク-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="js/jQuery3.4.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+
+
+<body>
+    <!--舞い散るアニメーション-->
+    <script type="text/javascript" src="./JQuery-Snowfall-master/dist/snowfall.jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $(document).snowfall({
+                image: ['img/hanabira.png'],
+                flakeCount: 35,
+                maxSpeed: 2,
+                minSpeed: 1,
+                maxSize: 15,
+                minSize: 15,
+                shadow: false
+            });
+        });
+    </script>
+
+
+
+    <!--HEADER部分-->
+    <header class="page-header wrapper">
+        <h1>
+            <a href="index.html"><img class="logo" src="img/logo1.png" alt="うまか堂ロゴ"></a>
+        </h1>
+        
+        <!--SNS-->
+        <div class="sns">
+            <ul>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!--CONTENTS部分-->
+    <div class="home-content wrapper">
+
+
+        <!--サークル部分-->
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+
+
+        <!--もなか画像-->
+
+        <div class="content">
+            <img src="img/monaka_white.png" alt="白色の梅もなかの写真" class="img-main1 js-modal-open1"><br>
+            <img src="img/monaka_pink.png" alt="ピンク色の梅もなかの写真" class="img-main2 js-modal-open2">
+        </div>
+        <div id="modal01" class="modal js-modal1">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <h1>八女茶味</h1><br>
+                <p>福岡県八女市の茶葉を使用し、餡に練りこみました。</p>
+                <a class="js-modal-close1" href="">閉じる</a>
+            </div>
+            <!--modal__inner-->
+        </div>
+        <!--modal-->
+        <div id="modal02" class="modal js-modal2">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <h1>梅味</h1><br>
+                <p>福岡県八女市の梅を使用し、餡に練りこみました。</p>
+                <a class="js-modal-close2" href="">閉じる</a>
+            </div>
+        </div>
+
+        <!--もなか画像おわり-->
+
+
+        <!--メジロイラスト-->
+        <img src="img/ume_mejiro.svg" alt="梅と目白のイラスト" class="img-sub01">
+
+
+    </div>
+
+
+    <!--caption-->
+    <div class="sub-content wrapper">
+        <img src="img/title.png" alt="うまか！梅もなか" class="title_img">
+    </div>
+
+    <div class="sub-content2 wrapper">
+        <img src="img/caption2.png" alt="うまか堂の梅もなか。福岡の新しいお菓子です。梅味と八女茶味の優しい甘みが特徴の梅もなかです。おやつにもお土産にも。ぜひどうぞ。" class="sub_img">
+    </div>
+
+    <div class="form_link">
+        <a href="shop.html">
+            <p>SHOP</p><img src="img/shop.png" alt="">
+        </a>
+    </div>
+
+
+    <!--FOOTER部分-->
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2021 うまか堂 All rights reserved.</small></p>
+        </div>
+    </footer>
+
+</body></html>
