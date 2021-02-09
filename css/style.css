@@ -5,6 +5,7 @@
 body {
     -webkit-animation: fadeIn 4s ease 0s 1 normal;
     animation: fadeIn 4s ease 0s 1 normal;
+    overflow-x: hidden;
 }
 
 @keyframes fadeIn {
